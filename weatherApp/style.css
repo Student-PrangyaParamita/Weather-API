@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(100, 201, 240);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: #88d7e6dc;
+    color: #03346E;
+    width: auto;
+    max-width: 690px;
+    margin: 75px auto 0;
+    border-radius: 10px;
+    border: 1px solid #03346E;
+    padding: 30px;
+    box-shadow: 7px 7px 10px #626161;
+    /* display: grid;
+    grid-template: column;
+    place-content: center; */
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.header input {
+    margin: 10px 4px 10px 2px;
+    padding: 4px;
+    border: 1px solid rgb(113, 110, 113);
+    outline: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.header button {
+    padding: 5px;
+    border: 1px solid rgb(113, 110, 113);
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.header button:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.data {
+    text-align: center;
+}
+
+.data h3 {
+    padding: 20px;
+    font-size: larger;
+}
+
+.data h4 {
+    padding: 0 20px 20px 20px;
+    font-size: 1.3em;
+}
+
+#city-temp {
+    padding: 0 20px 0px 20px;
+    /* container: "c"; */
+    font-size: 1.2em;
+}
+
+#condition-icon {
+    padding: 10px;
+    background: url("//cdn.weatherapi.com/weather/64x64/night/116.png");
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 56px) {
+    .container {
+        width: 90%;
+    }
+    .header {
+        width: 50%;
+    }
+    .header button {
+        margin: 0 80px 0 80px;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .container {
+        width: 90%;
+        height: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+    .header button {
+        margin: 0 20px 0 10px;
+    }
+}
